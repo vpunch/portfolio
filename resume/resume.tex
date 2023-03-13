@@ -1,0 +1,135 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\usepackage{geometry}
+\geometry{a4paper, left=15mm, right=15mm, top=20mm, bottom=15mm}
+
+\usepackage{array}
+\usepackage{multirow}
+\setlength{\extrarowheight}{1.4mm}
+\newcolumntype{N}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\usepackage{xurl}
+\usepackage{graphicx}
+
+\usepackage[skip=.8\baselineskip]{parskip}
+\pagenumbering{gobble}
+
+
+\begin{document}
+
+\begin{minipage}{0.2\textwidth}
+    \includegraphics[width=\linewidth]{./my-photo}
+\end{minipage}
+\hfill
+\begin{minipage}{0.78\textwidth}
+    \begin{tabular}{N{14cm}}
+{\large Панчишин Иван Романович, 24 года}
+\\
+\texttt{rot1tweiler@gmail.com}
+\\
+Имею опыт администрирования сетей, работы с машинным обучением, разработки
+веб-приложений, чат-ботов и десктоп-приложений. На постоянной основе использую
+GNU/Linux. Хочу развиваться в направлении фулстек-разработки веб-приложений:
+SQL, C++, Flask, React.
+\\
+Уровень английского: B2
+    \end{tabular}
+\end{minipage}
+
+\subsection*{Образование}
+
+\begin{tabular}{lN{5cm}N{10cm}}
+    Год & Тип & Место \\\hline
+    2005--2016 & Полное общее
+    & МКОУ <<Перегребинская СОШ №1>>, Перегребное \\
+
+    2016--2020 & Высшее, бакалавр, с отличием
+    & Югорский государственный университет (ЮГУ), Ханты-Мансийск \\
+
+    2020-2021 & Высшее, магистр, первый курс
+    & Университет ИТМО, Санкт-Петербург
+\end{tabular}
+
+\emph{Подтверждающие документы:}
+\url{https://github.com/vpunch/portfolio/blob/main/education/education.pdf}
+
+\subsection*{Карьера}
+
+\begin{tabular}{lN{8cm}N{7cm}}
+    Год & Место & Должность \\\hline
+    2019--2020 & ООО ИТ-ГРУПП & Сетевой администратор, администратор баз
+    данных \\
+
+    2020--2022 & Лаборатория Дискретной оптимизации и формальных методов
+    Университета ИТМО & Программист-исследователь \\
+
+    2022--2023 & ООО Научно-технический центр <<Системы управления>> &
+    Фулстек-разработчик
+\end{tabular}
+
+\subsection*{Проекты}
+
+Примеры проектов, над которыми работал самостоятельно:
+
+\begin{tabular}{N{8cm}N{9cm}}
+    TypeScript, React, styled-components, React Query, Lodash, Framer Motion,
+    Vite, GraphQL Code Generator, Sentry, Flask, Redis, pyTelegramBotAPI,
+    pydantic, Dadata
+    & \multirow{1}{=}[-1.5mm]{Сервис для управления торговыми телеграм-ботами,
+    интегрированный с ERP-системой на основе Hasura. Включает бэкенд,
+    позволяющий при помощи бота совершать заказы, получать рассылку, общаться
+    с администратором, и веб-приложение для сборки корзины и оплаты заказа.} \\
+    13 000 строк кода & \\
+    \url{https://github.com/vpunch/demo/tree/main/tg-store-manager} & \\\hline
+
+    Telegram Bot API, Яндекс Диалоги, VK API, Flask, Yargy, Natasha, NLTK,
+    Gensim, scikit-learn, Bash, PostgreSQL, Docker, Let's Encrypt, Apache
+    Benchmark, Diagrams.net
+    & \multirow{1}{=}[-1.5mm]{Информационный сервис, позволяющий через соц.
+    сети, мессенджеры, голосовые помощники или собственное приложение получать
+    доступ к расписанию занятий, новостям и справочной информации
+    образовательной организации. Проект является дипломным, пояснительную
+    записку к нему можно найти по ссылке.} \\
+    4500 строк кода & \\
+    \url{https://github.com/vpunch/demo/tree/main/UgraSage} & \\\hline
+
+    Qt, CMake, Конфигуратор 1С, Bash, BAT, MSYS2
+    & \multirow{1}{=}[-1.5mm]{Кроссплатформенная программа с графическим
+    интерфейсом для автоматизации обслуживания баз данных 1C. Проект также
+    включает набор скриптов, которые можно вручную добавить в системный
+    планировщик (cron или taskschd, в зависимости от ОС). Создавался как
+    альтернатива платному и закрытому Обновлятору.} \\
+    1700 строк кода & \\
+    \url{https://github.com/vpunch/1cmaintenance} & \\ & \\ &
+\end{tabular}
+
+\emph{Про другие проекты здесь:}
+\url{https://github.com/vpunch/portfolio/blob/main/projects/texout/projects.pdf}
+
+\newpage
+
+\subsection*{Награды}
+
+Основные награды:
+
+\begin{tabular}{lN{7cm}N{7cm}}
+    Год & Название &  \\\hline
+    2020 & Конгресс молодых ученых & Победитель конкурса докладов для
+    поступления в магистратуру \\
+
+    2020 & Чемпионат Югорского государственного университета по стандартам
+    WorldSkills & Победитель в компетенции <<Программные решения для
+    бизнеса>> \\
+
+    2017, 2018, 2019 & Молодежно научно-практическая конференция
+    <<Информационные технологии Югры>> & Победитель и призер
+\end{tabular}
+
+\emph{Остальные награды и дипломы:}
+\url{https://github.com/vpunch/portfolio/blob/main/rewards/rewards.pdf}
+
+\end{document}
